@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const mongoURI= ${process.env.REACT_APP_MONGO_URI};
+const mongoURI= `${process.env.REACT_APP_MONGO_URI}`;
 //const mongoURI="mongodb://localhost:27017/Phodit"
 const connectToMongo =() =>{
     mongoose.connect(mongoURI).then(()=>{
